@@ -1,0 +1,23 @@
+table,tr,td{
+    border: 1px solid black;
+    width: 400px;/*Prioriza al padre*/
+    height: 50px;/*Prioriza al hijo*/
+    border-collapse: collapse;
+    
+
+}
+
+tr:nth-child(even)
+td:nth-child(even),
+tr:nth-child(odd)
+td:nth-child(odd)
+{
+    background-color: #d9ae73;
+}
+tr:nth-child(odd)
+td:nth-child(even),
+tr:nth-child(even)
+td:nth-child(odd)
+{
+    background-color: #ffffff;
+}
